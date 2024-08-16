@@ -24,9 +24,13 @@
 
 // export default App;
 
-
+import './MyComponentStyle.css'; 
 import React, { useState } from 'react';
 import './App.css';
+import MyButton from './MyBotton';
+import Input from './Input';
+import MyForm from './MyForm';
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -37,15 +41,24 @@ function App() {
     
     <div className="App">
       <header className="App-header">
-
-
-
         
-        <h1>Hello, React!</h1>
+<MyForm></MyForm>
+
+
+<hr/>
+{/* 
+        <MyButton></MyButton>
+
+<hr></hr>
+    <Input></Input>    */}
+
+
+
+{/*         
         <p>You clicked {count} times</p>
         <button onClick={() => setCount(count + 1)}>
           Click me
-        </button>
+        </button> */}
       </header>
     </div>
   );
